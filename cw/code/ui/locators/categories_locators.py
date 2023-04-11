@@ -1,8 +1,7 @@
 from selenium.webdriver.common.by import By
-from ui.locators.base_locators import BaseLocators
 
 
-class CategoriesPageLocators(BaseLocators):
+class CategoriesPageLocators():
     BALANCE_CATEGORIES_PAGE = (
         By.CLASS_NAME, 'deposit__payment-form__container')
 

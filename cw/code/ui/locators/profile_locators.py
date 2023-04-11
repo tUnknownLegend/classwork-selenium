@@ -1,8 +1,7 @@
 from selenium.webdriver.common.by import By
-from ui.locators.base_locators import BaseLocators
 
 
-class ProfilePageLocators(BaseLocators):
+class ProfilePageLocators():
     PHONE_INPUT_PROFILE_PAGE = (
         By.XPATH, '//div[@class="js-contacts-field-phone profile__list__row__input"]/div/div/input')
 

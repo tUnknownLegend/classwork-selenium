@@ -1,8 +1,7 @@
 from selenium.webdriver.common.by import By
-from ui.locators.base_locators import BaseLocators
 
 
-class LoginPageLocators(BaseLocators):
+class LoginPageLocators():
     OPEN_BUTTON_LOGIN_PAGE = (By.XPATH,
                               '//div[(text()="Log in" or text()="Войти") and ' +
                               'contains(@class, "responseHead-module-button")]')
