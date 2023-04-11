@@ -1,9 +1,7 @@
 from ui.fixtures import get_driver
 from ui.pages.login_page import LoginPage
-import pytest
 
 
-# @pytest.mark.skip('skip')
 class TestLogin():
     driver = get_driver('chrome')
 

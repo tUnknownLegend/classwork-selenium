@@ -1,10 +1,8 @@
 from ui.fixtures import get_driver
 from ui.pages.categories_page import CategoriesPage
 from ui.pages.login_page import LoginPage
-import pytest
 
 
-# @pytest.mark.skip('skip')
 class TestCategories():
     driver = get_driver('chrome')
 
