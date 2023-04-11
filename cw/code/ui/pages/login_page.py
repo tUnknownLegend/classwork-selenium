@@ -1,5 +1,6 @@
 from ui.pages.base_page import BasePage
 from ui.locators.login_locators import LoginPageLocators
+from ui.locators.categories_locators import CategoriesPageLocators
 
 
 class LoginPage(BasePage):
@@ -8,6 +9,7 @@ class LoginPage(BasePage):
     pwd = 'LOL123!'
 
     locators = LoginPageLocators()
+    categoryLocator = CategoriesPageLocators()
 
     def render_page(self):
         self.render(self.url)
@@ -15,7 +17,7 @@ class LoginPage(BasePage):
 
     def login(self):
         self.find(
-            self.locators.OPEN_BUTTON_LOGIN_PAGE
+            self.locators.OPEN_BUTTON_LOGIN_PAGE, 5
         ).click()
 
         email_field = self.find(self.locators.EMAIL_INPUT_LOGIN_PAGE)
@@ -33,5 +35,5 @@ class LoginPage(BasePage):
 
     def check_header_email(self):
         assert self.find(
-            self.locators.HEADER_EMAIL_LOGIN_PAGE,
+            self.categoryLocator.NAV_PROFILE_CATEGORIES_PAGE,
             10)

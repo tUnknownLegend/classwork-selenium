@@ -8,7 +8,7 @@ class TestChangeProfile():
     driver = get_driver('chrome')
 
     def reload(self, categories_page):
-        categories_page.navigateToFeed()
+        categories_page.navigateToBalance()
         categories_page.navigateToProfile()
 
     def test_change_profile(self):

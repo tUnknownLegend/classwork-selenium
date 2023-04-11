@@ -12,8 +12,8 @@ class CategoriesPageLocators(BaseLocators):
     PROFILE_CATEGORIES_PAGE = (
         By.CLASS_NAME, 'profile__list')
 
-    # FEED_CATEGORIES_PAGE = (
-    #     By.CLASS_NAME, 'feeds-module-controls-cKRaP3')
+    NAV_BALANCE_CATEGORIES_PAGE = (By.XPATH, '//a[@href="/billing"]')
 
-    UL_ELEMENT_CATEGORIES_PAGE = (By.XPATH,
-                                  '/html/body/div[1]/div[1]/div/div/div/div[2]/ul')
+    NAV_PROFILE_CATEGORIES_PAGE = (By.XPATH, '//a[@href="/profile"]')
+
+    NAV_STATS_CATEGORIES_PAGE = (By.XPATH, '//a[@href="/statistics"]')
