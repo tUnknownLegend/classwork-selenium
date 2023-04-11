@@ -1,1 +1,1 @@
-pytest cw/code/test.py
+pytest cw/code/test*.py
