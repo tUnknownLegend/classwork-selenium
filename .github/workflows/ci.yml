@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  test01:
+  selenium:
     runs-on: ubuntu-latest
     steps:
       - name: Check out this repo
@@ -25,4 +25,5 @@ jobs:
         run: pip install requests webdriver-manager selenium pytest
 
       - name: Run pytest
-        run: bash runner_test.sh
+        run: bash runner_tests.sh
+        
