@@ -16,11 +16,11 @@ class LoginPage(BasePage):
         self.is_opened(self.url)
 
     def login(self):
-        self.find(
-            self.locators.OPEN_BUTTON_LOGIN_PAGE, 10
-        ).click()
+        self.find(self.locators.OPEN_BUTTON_LOGIN_PAGE).click()
 
-        email_field = self.find(self.locators.EMAIL_INPUT_LOGIN_PAGE)
+        email_field = self.find(
+            self.locators.EMAIL_INPUT_LOGIN_PAGE)
+
         email_field.clear()
         email_field.send_keys(self.email)
 
@@ -29,11 +29,8 @@ class LoginPage(BasePage):
         pwd_field.clear()
         pwd_field.send_keys(self.pwd)
 
-        self.find(
-            self.locators.SIGN_IN_BUTTON_LOGIN_PAGE
-        ).click()
+        self.find(self.locators.SIGN_IN_BUTTON_LOGIN_PAGE).click()
 
     def check_header_email(self):
         assert self.find(
-            self.categoryLocator.NAV_PROFILE_CATEGORIES_PAGE,
-            10)
+            self.categoryLocator.NAV_PROFILE_CATEGORIES_PAGE)

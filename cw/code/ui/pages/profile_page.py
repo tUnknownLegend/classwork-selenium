@@ -10,13 +10,11 @@ class ProfilePage(BasePage):
 
     def get_phone_field(self):
         return self.find(
-            self.locators.PHONE_INPUT_PROFILE_PAGE,
-            5)
+            self.locators.PHONE_INPUT_PROFILE_PAGE)
 
     def get_name_field(self):
         return self.find(
-            self.locators.NAME_INPUT_PROFILE_PAGE,
-            5)
+            self.locators.NAME_INPUT_PROFILE_PAGE)
 
     def change_data(self, phone_number, name):
         phone_field = self.get_phone_field()

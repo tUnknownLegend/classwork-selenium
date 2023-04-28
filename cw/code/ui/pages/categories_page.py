@@ -6,7 +6,7 @@ class CategoriesPage(BasePage):
     locators = CategoriesPageLocators()
 
     def checkClassName(self, classNameSelector):
-        assert self.find(classNameSelector, 10)
+        assert self.find(classNameSelector)
 
     def test_header_categories(self, starting_element,
                                starting_element_className,
@@ -28,10 +28,10 @@ class CategoriesPage(BasePage):
         self.checkClassName(second_destination_className)
 
     def navigateToProfile(self):
-        self.find(self.locators.NAV_PROFILE_CATEGORIES_PAGE, 10).click()
+        self.find(self.locators.NAV_PROFILE_CATEGORIES_PAGE).click()
 
     def navigateToBalance(self):
-        self.find(self.locators.NAV_BALANCE_CATEGORIES_PAGE, 10).click()
+        self.find(self.locators.NAV_BALANCE_CATEGORIES_PAGE).click()
 
     def test_navigation(self):
         self.test_header_categories(
