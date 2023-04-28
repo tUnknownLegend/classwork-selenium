@@ -17,7 +17,7 @@ class LoginPage(BasePage):
 
     def login(self):
         self.find(
-            self.locators.OPEN_BUTTON_LOGIN_PAGE, 5
+            self.locators.OPEN_BUTTON_LOGIN_PAGE, 10
         ).click()
 
         email_field = self.find(self.locators.EMAIL_INPUT_LOGIN_PAGE)

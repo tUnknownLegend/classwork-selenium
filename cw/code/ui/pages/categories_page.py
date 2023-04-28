@@ -28,10 +28,10 @@ class CategoriesPage(BasePage):
         self.checkClassName(second_destination_className)
 
     def navigateToProfile(self):
-        self.find(self.locators.NAV_PROFILE_CATEGORIES_PAGE).click()
+        self.find(self.locators.NAV_PROFILE_CATEGORIES_PAGE, 10).click()
 
     def navigateToBalance(self):
-        self.find(self.locators.NAV_BALANCE_CATEGORIES_PAGE).click()
+        self.find(self.locators.NAV_BALANCE_CATEGORIES_PAGE, 10).click()
 
     def test_navigation(self):
         self.test_header_categories(
